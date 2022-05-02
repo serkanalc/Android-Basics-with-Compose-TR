@@ -5,10 +5,10 @@
 
 📌  [Değişkenler ve veri türleri](#1) <br>
 📌  [Değişkenleri tanımlayın ve kullanın](#2) <br>
-📌  [Bir Fonksiyonun Parçaları](#3) <br>
-📌  [Programınızı değiştirin](#4) <br>
-📌  [Kotlin stil rehberi](#5) <br>
-📌  [Kodunuzdaki hataları düzeltin](#6) <br>
+📌  [Bir Fonksiyonun Parçaları](#0) <br>
+📌  [Programınızı değiştirin](#0) <br>
+📌  [Kotlin stil rehberi](#0) <br>
+📌  [Kodunuzdaki hataları düzeltin](#0) <br>
 
 #
 
