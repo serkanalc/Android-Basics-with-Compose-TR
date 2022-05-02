@@ -2,6 +2,7 @@
 
 ### Konu Başlıkları:
 
+- [Compose ile Android Temelleri'ne hoş geldiniz!](#0)
 - [Programlamaya yeni başlayanlar için](#1)
 - [Halihazırda geliştiriciler için](#2)
 - [Diğer eğitim materyalleri](#3)
@@ -9,7 +10,8 @@
 
 #
 
-Compose ile Android Temelleri'ne hoş geldiniz!
+
+# <a name="1"></a>Compose ile Android Temelleri'ne hoş geldiniz!
 
 Bu kurs, Google tarafından önerilen en son en iyi uygulamaları kullanarak Kotlin programlama dilinde Android uygulamalarının nasıl oluşturulacağını öğrenmek isteyenler içindir. Android uygulamalarınızda güzel kullanıcı arayüzleri (UI'ler) oluşturmanın modern yolu olan Jetpack Compose'u kullanarak bir dizi uygulama oluşturacaksınız.
 
