@@ -19,7 +19,7 @@ Kotlin'de Android uygulamaları oluşturmaya başlamak için öncelikle Kotlin'd
 ✅ Basit bir Kotlin programı nasıl yazılır ve çalıştırılır.<br>
 ✅ Çıktıyı değiştirmek için basit bir program nasıl değiştirilir.
 
-# Neye ihtiyacın olacak
+### Neye ihtiyacın olacak
 
 - İnternet erişimi ve web tarayıcısı olan bir bilgisayar.
 
