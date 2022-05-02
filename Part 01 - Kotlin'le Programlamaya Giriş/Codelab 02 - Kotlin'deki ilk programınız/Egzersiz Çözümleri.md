@@ -40,6 +40,11 @@ fun main() {
 }
 ```
 ## 6. Soru
+
+Programı çalıştırdığınızda, Çözülmemiş bir başvuru görüyorsunuz: println hatası. Bu mesaj doğrudan sorunun nasıl çözüleceğini söylemez. Bu, bazen bir hatayı giderirken olabilir ve beklenmeyen davranışı çözmek için koda daha derinlemesine bakmanızı gerektirir.
+
+Daha yakından bakıldığında, koddaki ikinci println() işlev çağrısı kırmızıdır, bu da sorunun nerede olduğunu gösterir. Kotlin, her satırda yalnızca bir ifade bekler. Bu durumda, sen
+
 ```
 fun main() {
     println("Cloudy")
@@ -48,6 +53,9 @@ fun main() {
 }
 ```
 ## 7. Soru
+
+Programı çalıştırırsanız şu hatayı görürsünüz: 'main' işlevinin bir gövdesi olmalıdır. Bir işlev gövdesi, açma ve kapama parantezleri ( ) değil, bir açılış küme parantezi ve bir kapanış küme ayracı { } içine alınmalıdır.
+
 ```
 1
 2
