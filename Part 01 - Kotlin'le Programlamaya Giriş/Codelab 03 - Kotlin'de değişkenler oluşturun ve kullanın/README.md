@@ -6,9 +6,6 @@
 📌  [Değişkenler ve veri türleri](#1) <br>
 📌  [Değişkenleri tanımlayın ve kullanın](#2) <br>
 📌  [Değişkenleri güncelleyin](#3) <br>
-📌  [Programınızı değiştirin](#5) <br>
-📌  [Kotlin stil rehberi](#5) <br>
-📌  [Kodunuzdaki hataları düzeltin](#5) <br>
 
 #
 
