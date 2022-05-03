@@ -495,3 +495,112 @@ fun main() {
 ```
 
 # <a name="3"></a>Değişkenleri güncelleyin
+
+Bir uygulama çalışırken, bir değişkenin değerinin güncellenmesi gerekebilir. Örneğin, bir alışveriş uygulamasında, kullanıcı alışveriş sepetine ürün ekledikçe alışveriş sepeti toplamı artar.
+
+Alışveriş kullanım durumunu basit bir programa dönüştürelim. Mantık Kotlin'de değil, insan diliyle yazılmıştır. Buna sözde kod adı verilir, çünkü kodun nasıl yazılacağının kilit noktalarını açıklar, ancak kodun tüm ayrıntılarını içermez.
+
+> Not: Sözde kod, derlenebilen çalışan kod anlamına gelmez, bu nedenle sözde kod olarak adlandırılır.
+
+Bir programın main fonksiyonunda:
+
+- 0 değerinde başlayan bir `cartTotal` tamsayı değişkeni oluşturun.
+- Kullanıcı, alışveriş sepetine maliyeti 20 ABD doları olan bir kazak ekler.
+- cartTotal değişkenini, alışveriş sepetlerindeki ürünlerin mevcut maliyeti olan 20 olarak güncelleyin.
+- cartTotal değişkeni olan sepetlerindeki öğelerin toplam maliyetini çıktıya yazdırın.
+
+Kodu daha da basitleştirmek için, kullanıcı alışveriş sepetine ürün eklediğinde kodu yazmanız gerekmez. (Bir programın kullanıcı girdisine nasıl yanıt verebileceğini henüz öğrenmediniz. Bu daha sonraki bir ünitede gelecektir.) Bu nedenle, cartTotal değişkenini oluşturduğunuz, güncellediğiniz ve yazdırdığınız kısımlara odaklanın.
+
+1. Kotlin Playground'daki mevcut kodu aşağıdaki programla değiştirin. Programın 2. satırında cartTotal değişkenini 0 değerine tanımlarsınız. Bir başlangıç değeri sağladığınız için, tür çıkarımı nedeniyle Int veri türünü belirtmenize gerek yoktur. Programın 3. satırında, cartTotal değişkenini atama operatörü (=) ile 20'ye güncellemeye çalışıyorsunuz. Programın 4. satırında, bir string şablonu kullanarak cartTotal değişkenini yazdırıyorsunuz.
+
+```
+fun main() {
+    val cartTotal = 0
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+```
+2. Programı çalıştırın ve bir derleme hatası alacaksınız.
+3. Hatanın, val'in yeniden atanamayacağını söylediğine dikkat edin. Hata, cartTotal değişkeninin değerini 20 olarak değiştirmeye çalışan programın üçüncü satırındadır. val cartTotal, bir başlangıç değeri (0) atandıktan sonra başka bir değere (20) yeniden atanamaz.
+
+```
+Val cannot be reassigned (Val yeniden atanamaz)
+```
+Bir değişkenin değerini güncellemeniz gerekiyorsa, değişkeni val yerine Kotlin var anahtar kelimesiyle bildirin.
+
+- val anahtar sözcüğü - Değişken değerinin değişmeyeceğini düşündüğünüzde kullanın.
+- var anahtar sözcüğü - Değişken değerinin değişebileceğini düşündüğünüzde kullanın.
+
+Val ile değişken salt okunurdur, yani değişkenin değerini yalnızca okuyabilir veya ona erişebilirsiniz. Değer ayarlandıktan sonra değerini düzenleyemez veya değiştiremezsiniz. var ile değişken değişkendir, yani değer değiştirilebilir veya değiştirilebilir. Değer mutasyona uğratılabilir.
+
+Farkı hatırlamak için val'i sabit bir değer ve var'ı değişken olarak düşünün. Kotlin'de, mümkün olduğunda var anahtar sözcüğü yerine val anahtar sözcüğünün kullanılması önerilir.
+
+4. Programın 2. satırındaki cartTotal değişken bildirimini val yerine var kullanacak şekilde güncelleyin. Kodun nasıl görünmesi gerektiği:
+
+```
+fun main() {
+    var cartTotal = 0
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+```
+5. Değişkeni güncelleyen programın 3. satırındaki kodun sözdizimine dikkat edin.
+
+```
+cartTotal = 20
+```
+Mevcut değişkene (cartTotal) yeni bir değer (20) atamak için atama operatörünü (=) kullanın. Değişken zaten tanımlı olduğundan var anahtar sözcüğünü tekrar kullanmanız gerekmez.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/70329389/166594065-077986b1-9ffe-4a5b-b44f-0fe8e1ffcc48.png" />
+</p>
+
+Kutu benzetmesini kullanarak, cartTotal etiketli kutuda saklanan 20 değerini hayal edin.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/70329389/166595018-d6499150-95bd-46e5-8ad1-f1f99dfcff4d.png" />
+</p>
+
+Daha önceki bir kod satırında zaten bildirilmiş olan bir değişkeni güncellemek için genel syntax için bir diyagram burada. İfadeyi güncellemek istediğiniz değişkenin adıyla başlatın. Bir boşluk, eşittir işareti ve ardından başka bir boşluk ekleyin. Ardından değişken için güncellenen değeri yazın.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/70329389/166596349-6c9c0c03-0709-462c-8401-a6159128b8c8.png" />
+</p>
+
+6. Programınızı çalıştırın ve kod başarıyla derlenmelidir. Bu çıktıyı yazdırmalıdır:
+
+```
+Total: 20
+```
+
+7. Program çalışırken değişken değerinin nasıl değiştiğini görmek için, değişken başlangıçta tanımlandıktan sonra cartTotal değişkenini çıktıya yazdırın. Aşağıdaki kod değişikliklerine bakın. 3. satırda yeni bir println() ifadesi var. Ayrıca kodun 4. satırına boş bir satır eklenmiş. Boş satırların derleyicinin kodu nasıl anladığı üzerinde herhangi bir etkisi yoktur. İlgili kod bloklarını ayırarak kodunuzu okumayı kolaylaştıracak boş bir satır ekleyin.
+
+```
+fun main() {
+    var cartTotal = 0
+    println("Total: $cartTotal")
+
+    cartTotal = 20
+    println("Total: $cartTotal")
+}
+```
+
+8. Programı tekrar çalıştırın ve çıktı şöyle olmalıdır:
+
+```
+Total: 0
+Total: 20
+```
+Başlangıçta alışveriş sepeti toplamının 0 olduğunu görebilirsiniz. Ardından 20'ye güncellenir. Bir değişkeni başarıyla güncellediniz! Bu, cartTotal'ı salt okunur bir değişkenden (val ile) değişebilir bir değişkene (var ile) değiştirdiğiniz için mümkün oldu.
+
+Değerin değişmesini bekliyorsanız, bir değişkeni bildirmek için yalnızca `var` kullanmanız gerektiğini unutmayın. Aksi takdirde, bir değişkeni bildirmek için varsayılan olarak `val` kullanmalısınız. Bu uygulama, kodunuzu daha güvenli hale getirir. val kullanmak, siz beklemiyorsanız değişkenlerin programınızda güncellenmemesini sağlar. Bir değere bir değer atandığında, her zaman o değerde kalır.
+
+> Not: Diğer programlama dillerine aşina iseniz, bir val bildirmek, salt okunur bir değişken olduğu için sabit bir değer bildirmek gibidir. Bu codelab için daha gelişmiş olan Kotlin'de sabitleri bildirirken izlenecek ek kurallar vardır, ancak bunları stil kılavuzunun [Constants](https://developer.android.com/kotlin/style-guide#constant_names) bölümünde bulabilirsiniz.
+
+
+
+
+
+
+
+
