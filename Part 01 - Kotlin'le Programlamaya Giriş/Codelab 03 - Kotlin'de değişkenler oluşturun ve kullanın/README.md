@@ -6,6 +6,8 @@
 📌  [Değişkenler ve veri türleri](#1) <br>
 📌  [Değişkenleri tanımlayın ve kullanın](#2) <br>
 📌  [Değişkenleri güncelleyin](#3) <br>
+📌  [Diğer veri türlerini keşfedin](#4) <br>
+
 
 #
 
@@ -597,10 +599,117 @@ Değerin değişmesini bekliyorsanız, bir değişkeni bildirmek için yalnızca
 
 > Not: Diğer programlama dillerine aşina iseniz, bir val bildirmek, salt okunur bir değişken olduğu için sabit bir değer bildirmek gibidir. Bu codelab için daha gelişmiş olan Kotlin'de sabitleri bildirirken izlenecek ek kurallar vardır, ancak bunları stil kılavuzunun [Constants](https://developer.android.com/kotlin/style-guide#constant_names) bölümünde bulabilirsiniz.
 
+### Artırma ve eksiltme operatörleri
 
 
+Artık bir değişkenin değerini güncellemek için değişken olarak bildirilmesi gerektiğini biliyorsunuz. Bu bilgiyi, tanıdık gelmesi gereken aşağıdaki e-posta mesajı örneğine uygulayın.
+
+1. Kotlin Playground'daki kodu bu programla değiştirin:
+
+```
+fun main() {
+    val count: Int = 10
+    println("Okunmamış $count mesajınız var.")
+}
+```
+2. Programı çalıştır. Şunları yazdırmalıdır:
+
+```
+Okunmamış 10 mesajınız var
+```
+3. Sayı değişkenini değişken bir değer yapmak için val anahtar sözcüğünü var anahtar sözcüğüyle değiştirin. Programı çalıştırdığınızda çıktıda herhangi bir değişiklik olmamalıdır.
+
+```
+fun main() {
+    val count: Int = 10
+    println("Okunmamış $count mesajınız var.")
+}
+```
+4. Ancak, şimdi sayımı farklı bir değere güncelleyebilirsiniz. Örneğin, kullanıcının gelen kutusuna yeni bir e-posta geldiğinde, sayısını 1'e kadar artırabilirsiniz (Bir e-postanın gelmesi için kod yazmanıza gerek yoktur. İnternetten veri almak çok daha ileri bir konudur.) Şimdilik, bu kod satırıyla 1 artan sayı değişkenine odaklanın:
+
+```
+count = count + 1
+```
+
+Eşittir işaretinin sağındaki ifade count + 1'dir ve 11 olarak değerlendirilir. Bunun nedeni, şu anki count değerinin 10 (programın 2. satırında) ve 10 + 1'in 11'e eşit olmasıdır. Ardından atama operatörü ile. Sayı değişkeninde 11 değeri atanır veya saklanır.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/70329389/166605102-5ba2c28d-fc5d-4081-b3cb-ea55afb0e64b.png" />
+</p>
 
 
+Bu kod satırını programınıza main() fonksiyonunun en altına ekleyin. Kodunuz aşağıdaki gibi görünmelidir:
 
+```
+fun main() {
+    var count = 10
+    println("Okunmamış $count mesajınız var.")
+    count = count + 1
+}
+```
 
+Programı şimdi çalıştırırsanız, çıktı öncekiyle aynıdır çünkü güncelledikten sonra count değişkenini kullanmak için herhangi bir kod eklememişsinizdir.
+
+5. Değişken güncellendikten sonra okunmamış mesajların sayısını yazdıran başka bir print ifadesi ekleyin.
+
+```
+fun main() {
+    var count = 10
+    println("Okunmamış $count mesajınız var.")
+    count = count + 1
+    println("Okunmamış $count mesajınız var.")
+}
+```
+
+6. Programı çalıştır. İkinci mesaj, güncellenen 11 mesaj sayısını göstermelidir.
+
+```
+Okunmamış 10 mesajınız var.
+Okunmamış 11 mesajınız var.
+```
+
+7. Kısaca, bir değişkeni 1 artırmak istiyorsanız, iki artı sembolünden oluşan artırma operatörünü (++) kullanabilirsiniz. Bu sembolleri bir değişken adından hemen sonra kullanarak, derleyiciye değişkenin mevcut değerine 1 eklemek istediğinizi söylersiniz ve ardından yeni değeri değişkende saklarsınız. Aşağıdaki iki kod satırı eşdeğerdir, ancak ++ artış operatörünü kullanmak daha az yazmayı gerektirir.
+
+```
+count = count + 1
+```
+```
+count++
+```
+Kodunuzda bu değişikliği yapın ve ardından programınızı çalıştırın. Değişken adı ile artırma operatörü arasında boşluk olmamalıdır.
+
+```
+fun main() {
+    var count = 10
+    println("Okunmamış $count mesajınız var.")
+    count++
+    println("Okunmamış $count mesajınız var.")
+}
+```
+8. Programı çalıştır. Çıktı aynı, ancak şimdi yeni bir operatör öğrendiniz!
+
+```
+Okunmamış 10 mesajınız var.
+Okunmamış 11 mesajınız var.
+```
+Şimdi, sayma değişkeni adından sonra azaltma operatörünü (--) kullanmak için programınızın 4. satırını değiştirin. Azaltma operatörü iki eksi sembolünden oluşur. Azaltma operatörünü değişken adından sonra yerleştirerek derleyiciye değişkenin değerini 1 azaltmak ve yeni değeri değişkene kaydetmek istediğinizi söylersiniz.
+
+```
+fun main() {
+    var count = 10
+    println("Okunmamış $count mesajınız var.")
+    count--
+    println("Okunmamış $count mesajınız var.")
+}
+```
+
+10. Programı çalıştır. Bu çıktıyı yazdırmalıdır:
+
+```
+Okunmamış 10 mesajınız var.
+Okunmamış 9 mesajınız var.
+```
+Bu bölümde, artırma operatörünü (++) ve azaltma operatörünü (--) kullanarak değiştirilebilir bir değişkeni nasıl güncelleyeceğinizi öğrendiniz. Daha spesifik olarak, say++, say + 1 ile aynıdır ve say--, say - 1 ile aynıdır.
+
+# <a name="4"></a>Diğer veri türlerini keşfedin
 
