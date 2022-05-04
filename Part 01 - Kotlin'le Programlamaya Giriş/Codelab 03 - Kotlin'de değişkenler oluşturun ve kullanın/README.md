@@ -713,3 +713,143 @@ Bu bölümde, artırma operatörünü (++) ve azaltma operatörünü (--) kullan
 
 # <a name="4"></a>Diğer veri türlerini keşfedin
 
+Codelab'de daha önce, bazı yaygın temel veri türleriyle tanıştınız: `String`, `Int`, `Double` ve `Boolean`. Int veri türünü az önce kullandınız, şimdi diğer veri türlerini keşfedeceksiniz.
+
+| Kotlin veri türleri | Ne tür veriler içerebilir |
+|:---------------:|---------------| 
+|String|Text|
+|Int|Bütün tam sayılar|
+|Double|Ondalık sayılar |
+|Boolean|doğru ya da yanlış. Yalnızca iki olası değer olduğunda bu veri türünü kullanın. Kotlin'de true ve false anahtar kelimeler olduğuna dikkat edin.|
+
+Çıktının ne olduğunu görmek için bu programları Kotlin Playground'da deneyin.
+
+### Double
+
+Ondalık değere sahip bir değişkene ihtiyacınız olduğunda, Double değişkeni kullanın. Geçerli aralığı hakkında bilgi edinmek için [bu tabloya](https://kotlinlang.org/docs/basic-types.html#floating-point-types) bakın ve örneğin saklayabileceği ondalık basamaklara bakın.
+
+> Not: Double veri türünün adı, tek duyarlıklı Float veri türüne kıyasla çift duyarlıklı veri türünden gelir. Kesinlik, tutabilecekleri ondalık basamak sayısıdır. Bu nedenle, bir Double değişkeni daha kesin bir değer depolayabilir. Merak ediyorsanız, [bu tablo](https://kotlinlang.org/docs/basic-types.html#floating-point-types) Double ve Float türleri arasındaki belirli farklılıklar hakkında daha fazla ayrıntı gösterir. Codelab'ın bu bölümü, ondalık sayılarla çalışmak için Double kullanımına odaklanır.
+
+Bir varış noktasına gittiğinizi ve yol boyunca mola vermeniz gerektiği için seyahatinizin üç ayrı bölüme ayrıldığını hayal edin. Bu program, hedefinize ulaşmak için kalan toplam mesafeyi görüntüler.
+
+1. Bu kodu Kotlin Playground'a girin. Her kod satırında neler olduğunu anlayabiliyor musunuz?
+
+```
+fun main() {
+    val trip1: Double = 3.20
+    val trip2: Double = 4.10
+    val trip3: Double = 1.72
+    val totalTripLength: Double = 0.0
+    println("$totalTripLength km yolunuz kaldı")
+}
+```
+
+Gezinin her bir bölümünün mesafesini temsil etmek için trip1, trip2 ve trip3 adlı üç değişken bildirilir. Ondalık değerleri sakladıkları için hepsi Double değişkenleridir. Değerleri program boyunca değişmediğinden, her bir değişkeni bildirmek için val kullanın. Program ayrıca, şu anda 0.0 olarak tanımlanmış olan totalTripLength adlı dördüncü bir değişken oluşturur. Programın son satırı, totalTripLength değerine sahip bir mesaj yazdırır.
+
+2. Kodu, totalTripLength değişkeni üç açma uzunluğunun toplamı olacak şekilde düzeltin.
+
+```
+val totalTripLength: Double = trip1 + trip2 + trip3
+```
+
+Eşittir işaretinin sağındaki ifade 9,02 olarak değerlendirilir çünkü 3,20 + 4,10 + 1,72, 9,02'ye eşittir. 9.02 değeri totalTripLength değişkeninde saklanır.
+
+Tüm programınız aşağıdaki kod gibi görünmelidir:
+
+```
+fun main() {
+    val trip1: Double = 3.20
+    val trip2: Double = 4.10
+    val trip3: Double = 1.72
+    val totalTripLength: Double = trip1 + trip2 + trip3
+    println("$totalTripLength km yolunuz kaldı")
+}
+```
+
+3. Programı çalıştır. Bunu yazdırmalı:
+
+```
+9.02 km yolunuz kaldı
+```
+
+4. Tür çıkarımı nedeniyle değişken bildirimlerinden gereksiz Double veri türünü kaldırmak için kodunuzu düzeltin. Kotlin derleyicisi, başlangıç değerleri olarak sağlanan ondalık sayılara dayalı olarak bu değişkenlerin Double veri türleri olduğu sonucunu çıkarabilir.
+
+```
+fun main() {
+    val trip1 = 3.20
+    val trip2 = 4.10
+    val trip3 = 1.72
+    val totalTripLength: Double = trip1 + trip2 + trip3
+    println("$totalTripLength km yolunuz kaldı")
+}
+```
+5. Kodunuzun hala derlendiğinden emin olmak için kodunuzu yeniden çalıştırın. Çıktı aynı olmalı, ancak şimdi kodunuz daha basit!
+
+### String
+
+Metin depolayabilen bir değişkene ihtiyacınız olduğunda, bir String değişkeni kullanın. "Merhaba Kotlin" gibi String değişmez değerlerinin etrafında tırnak işaretleri kullanmayı unutmayın, oysa Int ve Double değişmez değerlerinin çevresinde tırnak işaretleri yoktur.
+
+1. Bu programı kopyalayıp Kotlin Playground'a yapıştırın.
+
+```
+fun main() {
+    val nextMeeting = "Bir sonraki görüşme:"
+    val date = "1 Ocak"
+    val reminder = nextMeeting + date
+    println(reminder)
+}
+```
+
+Bildirilen iki String değişkeni olduğuna dikkat edin, bir nextMeeting değişkeni ve bir tarih değişkeni. Ardından, nextMeeting değişkeni artı tarih değişkenine eşit olarak ayarlanan, reminder adlı üçüncü bir String değişkeni bildirilir.
+
+`+` sembolü ile birleştirme adı verilen iki diziyi birbirine ekleyebilirsiniz. İki ip birbiri ardına birleştirilir. nextMeeting + date ifadesinin sonucu, aşağıdaki şemada gösterildiği gibi "Bir sonraki görüşme: 1 Ocak" olur.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/70329389/166725777-6b0bbcdb-ec9a-416b-b170-9ca1f9bdd0e3.png" />
+</p>
+
+"Sonraki toplantı: 1 Ocak" değeri daha sonra programın 4. satırındaki atama operatörü kullanılarak reminder değişkenine kaydedilir.
+
+2. Programınızı çalıştırın. Bunu yazdırmalı:
+
+```
+Bir sonraki görüşme:1 Ocak
+```
+İki dizeyi birbirine bağladığınızda, dizeler arasına fazladan boşluk eklenmez. Ortaya çıkan dizede iki nokta üst üste işaretinden sonra bir boşluk istiyorsanız, boşluğu bir dizeye veya diğerine eklemeniz gerekir.
+
+3. nextMeeting değişkeninizi, kapanış tırnak işaretinden önce dizenin sonunda fazladan boşluk olacak şekilde güncelleyin. (Alternatif olarak, tarih değişkeninin başına fazladan bir boşluk ekleyebilirdiniz). Programınız aşağıdaki gibi görünmelidir:
+
+```
+fun main() {
+    val nextMeeting = "Bir sonraki görüşme: "
+    val date = "1 Ocak"
+    val reminder = nextMeeting + date
+    println(reminder)
+}
+```
+4. Programınızı tekrar çalıştırın ve şimdi çıktı mesajında iki nokta üst üste işaretinden sonra bir boşluk olmalıdır.
+
+```
+Bir sonraki görüşme: 1 Ocak
+```
+5. Hatırlatıcı değişkeninde depolanan ifadeye başka bir metin parçası ekleyecek veya birleştirecek şekilde kodu değiştirin.
+
+Reminder dizesinin sonuna "iş yerinde" dizesini eklemek için + sembolünü kullanın.
+
+6. Programı çalıştır.
+Bu çıktıyı yazdırmalıdır:
+
+```
+Bir sonraki görüşme: 1 Ocak iş yerinde
+```
+Aşağıdaki kod, davranışı uygulayabileceğiniz bir yolu gösterir.
+
+```
+fun main() {
+    val nextMeeting = "Bir sonraki görüşme: "
+    val date = "1 Ocak"
+    val reminder = nextMeeting + date + " iş yerinde"
+    println(reminder)
+}
+```
+
