@@ -964,7 +964,7 @@ Boolean değişkenini doğru veya yanlış bir değere ayarlamanın mümkün old
 
 Daha karmaşık programlar yazarken, satır başına önerilen 100 karakter sınırı vardır. Bu, bir programdaki tüm kodu, kodu okurken yatay olarak kaydırmanıza gerek kalmadan bilgisayar ekranınızda kolayca okuyabilmenizi sağlar.
 
-# <a name="5"></a>Kodunuzda yorum yapma
+# <a name="6"></a>Kodunuzda yorum yapma
 
 Kodlama yaparken izlenecek başka bir iyi uygulama, kodun ne yapmak istediğini açıklayan yorumlar eklemektir. Yorumlar, kodunuzu okuyan kişilerin onu daha kolay takip etmesine yardımcı olabilir. İki eğik çizgi simgesi //, satırın geri kalanında kendisinden sonra gelen metnin yorum olarak kabul edildiğini, dolayısıyla kod olarak yorumlanmadığını belirtir. İki eğik çizgi sembolünden sonra boşluk eklemek yaygın bir uygulamadır.
 
