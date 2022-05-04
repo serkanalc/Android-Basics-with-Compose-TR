@@ -1,30 +1,27 @@
 # Başlamadan Önce
 
-Telefonunuzda kullandığınız uygulamalarda, uygulamanın bazı bölümlerinin aynı kaldığına, diğer bölümlerin değiştiğine (veya değişken olduğuna) dikkat edin.
+Daha önceki bir kod laboratuvarında, Hello, world! yazan basit bir program gördünüz. Şimdiye kadar yazdığınız programlarda iki fonksiyon gördünüz:
 
-Örneğin, Ayarlar uygulamasındaki kategorilerin adları aynı kalır – Ağ ve internet, Bağlı cihazlar, Uygulamalar ve daha fazlası.
+- her Kotlin programında gerekli olan bir main() foksiyonu. Programın giriş noktası veya başlangıç noktasıdır.
+- Çıktı metni için main()'den çağırdığınız bir println() fonksiyonu.
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/70329389/166336830-233a5bb0-66c0-4886-8321-d34b9939a903.png" />
-</p>
+Bu codelab'de fonksiyonlar hakkında daha fazla bilgi edineceksiniz.
 
-Öte yandan, bir haber uygulamasına bakarsanız, makaleler sıklıkla değişecektir. Makale adı, kaynağı, yayınlandığı zaman ve resimler değişir.
+fonksiyonlar, her şeyi main()'e eklemek yerine kodunuzu yeniden kullanılabilir parçalara ayırmanıza izin verir. fonksiyonlar, Android uygulamalarının temel yapı taşıdır ve bunların nasıl tanımlanıp kullanılacağını öğrenmek, Android geliştiricisi olma yolculuğunuzda önemli bir adımdır.
 
-İçeriğin zamanla değişmesi için kodunuzu nasıl yazarsınız? Her gün, her saat ve her dakika, gönderilecek yeni makaleler olduğunda uygulamanızdaki kodu yeniden yazamazsınız!
+### Önkoşullar
 
-Bu kod laboratuvarında, programınızın belirli bölümlerinin tamamen yeni bir talimat seti yazmak zorunda kalmadan değişebilmesi için değişkenleri kullanan kodun nasıl yazılacağını öğreneceksiniz. Kotlin Playground'u önceki codelab'de yaptığınız gibi kullanacaksınız.
-
-### Ne inşa edeceksin?
-
-- Kotlin'de değişkenleri kullanan kısa programlar.
+- Değişkenler ve println() ve main() fonksiyonları dahil olmak üzere Kotlin programlama temelleri hakkında bilgi
 
 ### Ne öğreneceksin?
 
-✅ Bir değişken nasıl tanımlanır ve değeri nasıl güncellenir. <br>
-✅ Kotlin'deki temel veri türlerinden bir değişken için uygun bir veri türü nasıl seçilir. <br>
-✅ Kodunuza nasıl yorum eklenir. <br>
+✅ Kendi fonksiyonlarınızı nasıl tanımlar ve çağırırsınız. <br>
+✅ Bir değişkende saklayabileceğiniz bir fonksiyondan değerler nasıl döndürülür. <br>
+✅ Birden çok parametreli fonksiyonlar nasıl tanımlanır ve çağrılır. <br>
+✅ Adlandırılmış bağımsız değişkenlerle fonksiyonlar nasıl çağrılır. <br>
+✅ Fonksiyon parametreleri için varsayılan değerler nasıl ayarlanır.. <br>
 
 ### Neye ihtiyacın olacak?
-İnternet erişimi ve web tarayıcısı olan bir bilgisayar.
+Kotlin Playground'a erişimi olan bir web tarayıcısı.
 
 
