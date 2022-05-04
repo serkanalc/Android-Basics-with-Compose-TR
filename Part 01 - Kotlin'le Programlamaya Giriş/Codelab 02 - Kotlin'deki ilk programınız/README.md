@@ -2,13 +2,15 @@
 
 ### Konu Başlıkları:
 
+
+📌  [Başlamadan Önce](https://github.com/serkanalc/Android-Basics-with-Compose-TR/blob/main/Part%2001%20-%20Kotlin'le%20Programlamaya%20Giri%C5%9F/Codelab%2002%20-%20Kotlin'deki%20ilk%20program%C4%B1n%C4%B1z/Ba%C5%9Flamadan%20%C3%96nce.md) <br>
 📌  [Kotlin Playground'u açın](#1) <br>
 📌  [İlk programınızı çalıştırın](#2) <br>
 📌  [Bir Fonksiyonun Parçaları](#3) <br>
 📌  [Programınızı değiştirin](#4) <br>
 📌  [Kotlin stil rehberi](#5) <br>
 📌  [Kodunuzdaki hataları düzeltin](#6) <br>
-
+📌  [Kodunuzdaki hataları düzeltin](#6) <br>
 #
 
 
