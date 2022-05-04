@@ -3,6 +3,8 @@
 
 ### Konu Başlıkları:
 
+
+📌  [Başlamadan Önce](https://github.com/serkanalc/Android-Basics-with-Compose-TR/blob/main/Part%2001%20-%20Kotlin'le%20Programlamaya%20Giri%C5%9F/Codelab%2003%20-%20Kotlin'de%20de%C4%9Fi%C5%9Fkenler%20olu%C5%9Fturun%20ve%20kullan%C4%B1n/Ba%C5%9Flamadan%20%C3%96nce.md) <br>
 📌  [Değişkenler ve veri türleri](#1) <br>
 📌  [Değişkenleri tanımlayın ve kullanın](#2) <br>
 📌  [Değişkenleri güncelleyin](#3) <br>
