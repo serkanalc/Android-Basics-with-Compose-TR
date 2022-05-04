@@ -7,6 +7,9 @@
 📌  [Değişkenleri tanımlayın ve kullanın](#2) <br>
 📌  [Değişkenleri güncelleyin](#3) <br>
 📌  [Diğer veri türlerini keşfedin](#4) <br>
+📌  [Kodlama kuralları](#5) <br>
+📌  [Kodunuzda yorum yapma](#6) <br>
+
 
 
 #
@@ -852,4 +855,158 @@ fun main() {
     println(reminder)
 }
 ```
+nextMeeting ve date çevresinde tırnak işareti bulunmadığına dikkat edin, çünkü bunlar var olan dize değişkenlerinin adlarıdır (ilgili değerleri, etraflarında tırnak bulunan metinlerdir). Tersine, "iş yerinde" değişmezi daha önce herhangi bir değişkende tanımlanmamıştır, bu nedenle derleyicinin bunun diğer dizelerle birleştirilmesi gereken bir dize olduğunu bilmesi için bu metnin etrafında tırnak kullanın.
+
+Teknik olarak, ayrı değişkenler kullanmak yerine tam metinli tek bir String değişkeni bildirerek aynı çıktıyı elde edebilirsiniz. Ancak, bu alıştırmanın amacı, String değişkenlerini nasıl bildirebileceğinizi ve değiştirebileceğinizi, özellikle de ayrı stringleri nasıl birleştireceğinizi göstermektir.
+
+7. Dizeler içeren kodu okurken kaçış dizileriyle karşılaşabilirsiniz. Kaçış dizileri, önünde ters eğik çizgi olarak da adlandırılan ters eğik çizgi simgesi (\) bulunan karakterlerdir.
+
+Bir örnek, aşağıdaki örnekte olduğu gibi bir dize değişmezi içinde \$ görmektir. Bu kodu kopyalayıp Kotlin Playground'a yapıştırın.
+
+```
+fun main() {
+    println("Ödenmesi gereken tutar: \$5")
+}
+```
+Dize içindeki ifadenin değerini almak için bir ifadenin önüne dolar işareti simgesini ($) koymayı daha önce öğrenmiştiniz. Peki ya dizginizde $ sembolünü kullanmak isterseniz? Ardından, dizenizde $ sembolünden önce \$ olarak \ sembolünü eklemeniz gerekir.
+
+8. Çıktıyı görmek için programı çalıştırın. Şunları göstermelidir:
+
+```
+Ödenmesi gereken tutar: $5
+```
+
+"Ödenmesi gereken tutar: \$5", bir kaçış dizisi olan \$ içeren bir dize değişmez değeridir. Bir şablon ifadesi içermediği için bir dize şablonu değildir.
+
+Kotlin'de desteklenen diğer kaçış dizileri için, kaçış dizileriyle ilgili [dokümantasyon](https://kotlinlang.org/docs/basic-types.html#characters) sayfasına bakın. Örneğin, dizenizde bir tırnak işareti istiyorsanız, \" deki gibi tırnak işaretinden önce \ sembolünü kullanın.
+
+9. Bu kodu Kotlin Playground'a kopyalayın.
+
+```
+fun main() {
+    println("She said, \"Hello\"")
+}
+```
+Çıktı:
+
+```
+She said, "Hello"
+```
+
+Artık dizileri birleştirmeyi ve ayrıca diziler içindeki dizilerden kaçmayı öğrendiniz. Bu codelab'in kapsadığı son veri türüne geçin.
+
+### Boolean
+
+Boolean veri türü, değişkeniniz true veya false ile temsil edilen yalnızca iki olası değere sahip olduğunda kullanışlıdır.
+
+Örnek olarak, bir cihazın uçak modunun açık mı yoksa kapalı mı olduğunu veya bir uygulamanın bildirimlerinin etkin mi yoksa devre dışı mı olduğunu gösteren bir değişken verilebilir.
+
+1. Bu kodu Kotlin Playground'a girin. Bu programın 2. satırında, noticeEnabled adında bir Boolean değişkeni bildirir ve onu true olarak başlatırsınız. Teknik olarak, bildirimde : Boolean'ı atlayabilirsiniz, böylece isterseniz kaldırabilirsiniz. Programın 3. satırında noticeEnabled değişkeninin değerini yazdırıyorsunuz.
+
+```
+fun main() {
+    val notificationsEnabled: Boolean = true
+    println(notificationsEnabled)
+}
+```
+Programı çalıştırın ve şunu yazdırmalıdır:
+
+```
+true
+```
+2. Programın 2. satırında Boolean'ın başlangıç değerini false olarak değiştirin.
+
+```
+fun main() {
+    val notificationsEnabled: Boolean = false
+    println(notificationsEnabled)
+}
+```
+Programı çalıştırın ve şunu yazdırmalıdır:
+
+```
+false
+```
+3. Diğer veri türleri, Dizeler ile birleştirilebilir. Örneğin, Booleanları Dizelerle birleştirebilirsiniz. "Bildirimler etkinleştirildi mi?" dizesinin sonuna noticeEnabled boolean değişkeninin değerini birleştirmek (veya eklemek) için + simgesini kullanın.
+
+```
+fun main() {
+    val notificationsEnabled: Boolean = false
+    println("Bildirimler etkinleştirildi mi? " + notificationsEnabled)
+}
+```
+Birleştirmenin sonucunu görmek için programı çalıştırın. Program şu çıktıyı yazdırmalıdır:
+
+```
+Bildirimler etkinleştirildi mi? false
+```
+Boolean değişkenini doğru veya yanlış bir değere ayarlamanın mümkün olduğunu görebilirsiniz. Bir Boolean değişkeni gerçek bir değere sahip olduğunda, bazı talimat setlerini yürüttüğünüz daha ilginç senaryoları kodlamanıza olanak tanır. Veya Boolean değeri yanlış bir değere sahipse bu talimatları atlarsınız. Gelecekteki bir codelab'de Booleanlar hakkında daha fazla bilgi edineceksiniz.
+
+
+# <a name="5"></a>Kodlama kuralları
+
+Önceki codelab'de, Android kodunu Google'ın önerdiği ve diğer profesyonel geliştiricilerin izlediği, tutarlı bir şekilde yazmak için Kotlin stil kılavuzuyla tanıştınız.
+
+Öğrendiğiniz yeni konulara dayalı olarak izlemeniz için birkaç biçimlendirme ve kodlama kuralı daha:
+
+- Değişken isimleri büyük harfle ve küçük harfle başlamalıdır.
+- Değişken bildiriminde, veri türünü belirttiğinizde iki nokta üst üste işaretinden sonra bir boşluk olmalıdır.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/70329389/166840249-23799c44-9de0-4499-94e8-ae5434f4d365.png" />
+</p>
+
+- Atama (=), toplama (+), çıkarma (-), çarpma (*), bölme (/) operatörleri ve daha fazlası gibi bir operatörden önce ve sonra bir boşluk olmalıdır.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/70329389/166840359-e1e5d67b-6cc2-44cd-bc4a-64081758167d.png" />
+</p>
+
+Daha karmaşık programlar yazarken, satır başına önerilen 100 karakter sınırı vardır. Bu, bir programdaki tüm kodu, kodu okurken yatay olarak kaydırmanıza gerek kalmadan bilgisayar ekranınızda kolayca okuyabilmenizi sağlar.
+
+# <a name="5"></a>Kodunuzda yorum yapma
+
+Kodlama yaparken izlenecek başka bir iyi uygulama, kodun ne yapmak istediğini açıklayan yorumlar eklemektir. Yorumlar, kodunuzu okuyan kişilerin onu daha kolay takip etmesine yardımcı olabilir. İki eğik çizgi simgesi //, satırın geri kalanında kendisinden sonra gelen metnin yorum olarak kabul edildiğini, dolayısıyla kod olarak yorumlanmadığını belirtir. İki eğik çizgi sembolünden sonra boşluk eklemek yaygın bir uygulamadır.
+
+```
+// Bu bir yorumdur.
+```
+
+Bir yorum, bir kod satırının ortasından da başlayabilir. Bu örnekte, yükseklik = 1 normal bir kodlama ifadesidir. // veya Başlamak için yüksekliğin 1 olduğunu varsayın, sonraki her şey bir yorum olarak yorumlanır ve kodun bir parçası olarak kabul edilmez.
+
+```
+yükseklik = 1 // Başlamak için yüksekliğin 1 olduğunu varsayın.
+```
+
+Kodu bir satırda 100 karakteri aşan uzun bir yorumla daha ayrıntılı açıklamak istiyorsanız, çok satırlı bir yorum kullanın. Çok satırlı yorumu eğik çizgi (/) ve yıldız işareti (*) ile /* olarak başlatın. Yorumun her yeni satırının başına bir yıldız işareti ekleyin. Ardından son olarak yorumu bir yıldız işareti ve eğik çizgi sembolü */ ile sonlandırın.
+
+```
+/*
+  * Bu çok uzun bir yorum
+  * birden fazla satır kullanın.
+  */
+```
+
+Bu program, neler olduğunu açıklayan tek satırlı ve çok satırlı yorumlar içerir:
+
+```
+/**
+  * Bu program mesaj sayısını görüntüler
+  * kullanıcının gelen kutusundaki.
+  */
+fun main() {
+    // Okunmamış mesajların sayısı için bir değişken oluşturun.
+    var count = 10
+    println("sizin $count okunmamış mesajınız var.")
+
+    // Mesaj sayısını 1 azaltın.
+    count--
+    println("sizin $count okunmamış mesajınız var.")
+}
+```
+
+Daha önce belirtildiği gibi, ilgili ifadeleri birlikte gruplandırmak ve kodun okunmasını kolaylaştırmak için kodunuza boş satırlar ekleyebilirsiniz.
+
+1. Kullandığınız önceki bir kod parçacığına bazı yorumlar ekleyin.
+2. Yorumların çıktıyı etkilememesi gerektiğinden, davranışın değişmediğinden emin olmak için programı çalıştırın.
 
