@@ -8,11 +8,7 @@ Bu repositorie'de Google'ın tamamıyla ücretsiz olarak sunduğu [Android Kotli
 |Ünite|✅  |          Konu Başlığı          | Döküman Sayısı  | Proje Sayısı | Tahmini Süre |Başarım Rozeti |
 |:---:|:-----|:------------------------------:|:-----------------:|:--------------:|:--------------:|:-------------:|
 |1|✅     | [Build an Interactive App](https://github.com/serkanalc/Android-Kotlin-Fundamentals/tree/main/Part%2003%20-%20Layouts)       |5 Codelab                 |1 Proje              | 3 Saat             | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-1/badge.svg" width="135em"/>  
-|1|✅     | [Build an Interactive App](https://github.com/serkanalc/Android-Kotlin-Fundamentals/tree/main/Part%2003%20-%20Layouts)       |3 Doküman                 |1 Proje              | 3 Saat             | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-2/badge.svg" width="135em"/>  
-|1|✅     | [Build an Interactive App](https://github.com/serkanalc/Android-Kotlin-Fundamentals/tree/main/Part%2003%20-%20Layouts)       |3 Doküman                 |1 Proje              | 3 Saat             | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-3/badge.svg" width="135em"/>  
-|2|✅     | [Layouts](https://github.com/serkanalc/Android-Kotlin-Fundamentals/tree/main/Part%2003%20-%20Layouts)                        |4 Doküman                 |2 Proje              | 4 Saat             | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-2-pathway-1/badge.svg" width="135em"/>
-|2|✅      | [Navigation](https://github.com/serkanalc/Android-Kotlin-Fundamentals/tree/main/Part%2004%20-%20Navigation)                     |3 Doküman                 |1 Proje              |4 Saat               | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-2-pathway-2/badge.svg" width="135em"/>
-|3|✅      | [Kullanıcı arayüzü ve durumla etkileşim](https://github.com/serkanalc/Android-Kotlin-Fundamentals/tree/main/Part%2005%20-%20Activity%20%26%20Fragment%20Lifecycles%20) |2 Doküman                 |1 Proje               |3 Saat              | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-2-pathway-3/badge.svg" width="135em"/>
+
 
 ## 🛠 Güncellemeler
 
