@@ -6,6 +6,9 @@
 📌  [Bir fonksiyondan bir değer döndürün](#2) <br>
 📌  [BirthdayGreeting() fonksiyonuna bir parametre ekleyin](#3) <br>
 📌  [Birden çok parametreli fonksiyonlar](#4) <br>
+📌  [Adlandırılmış argümanlar](#5) <br>
+📌  [Varsayılan argümanlar](#6) <br>
+
 
 
 
@@ -286,14 +289,139 @@ println(birthdayGreeting("Rex"))
 
 # <a name="4"></a>Birden çok parametreli fonksiyonlar
 
+Daha önce, selamlamayı ada göre değiştirmek için bir parametre eklemiştiniz. Bununla birlikte, bir fonksiyon için birden fazla parametre, hatta farklı veri türlerinin parametreleri de tanımlayabilirsiniz. Bu bölümde, selamlamayı köpeğin yaşına göre de değişecek şekilde değiştireceksiniz.
 
+Parametre tanımları virgülle ayrılır. Benzer şekilde, birden çok parametreli bir işlevi çağırdığınızda, iletilen argümanları da virgülle ayırırsınız. Bunu eylemde görelim.
 
+1. name parametresinden sonra, birthdayGreeting() işlevine Int türünde bir age parametresi ekleyin. Yeni fonksiyon bildirimi, virgülle ayrılmış ad ve yaş olmak üzere iki parametreye sahip olmalıdır:
 
+```
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Doğum günün kutlu olsun, $name!"
+    val ageGreeting = "Şimdi 5 yaşındasın!"
+    return "$nameGreeting\n$ageGreeting"
+}
+```
+2. Yeni selamlama dizesi age parametresini kullanmalıdır. ageGreeting dizesindeki age parametresinin değerini kullanmak için birthdayGreeting() işlevini güncelleyin.
 
+```
+fun birthdayGreeting(name: String, age: Int): String {
+    val nameGreeting = "Doğum günün kutlu olsun, $name!"
+    val ageGreeting = "Şimdi $age yaşındasın!"
+    return "$nameGreeting\n$ageGreeting"
+}
+```
 
+3. Fonksiyonu çalıştırın ve çıktıdaki hatalara dikkat edin:
 
+```
+No value passed for parameter 'age'
+No value passed for parameter 'age'
+```
+4. Her köpek için farklı bir yaşta eklemek için main() içindeki birthdayGreeting() fonksiyonuna yapılan iki çağrıyı değiştirin. Rover'ın yaşı için 5'i ve Rex'in yaşı için 2'yi geçin.
 
+```
+fun main() {
+    println(birthdayGreeting("Rover", 5))
+    println(birthdayGreeting("Rex", 2))
+}
+```
 
+5. Kodunuzu çalıştırın. Artık her iki parametre için de değerler ilettiğinize göre, fonksiyonu çağırdığınızda çıktı her köpeğin adını ve yaşını yansıtmalıdır.
 
+```
+Doğum günün kutlu olsun,
+Rover! Şimdi 5 yaşındasın!
+Doğum günün kutlu olsun, 
+Rex! Şimdi 2 yaşındasın!
+```
 
+### Fonksiyon İmzası
 
+Şimdiye kadar fonksiyon adını, girdileri (parametreleri) ve çıktıları nasıl tanımlayacağınızı gördünüz. Bunlar topluca fonksiyon imzası olarak bilinir. İşlev imzası, açılış kaşlı ayracından önceki her şeyden oluşur ve aşağıda gösterilmiştir.
+
+```
+fun birthdayGreeting(name: String, age: Int): String
+```
+Virgülle ayrılmış parametrelere bazen parametre listesi denir.
+
+Bu terimleri genellikle diğer geliştiriciler tarafından yazılan kod belgelerinde görürsünüz. İşlev imzası, bir işlevi çağırma hakkında bilmeniz gereken her şeyi, hangi veri türlerinin iletilebileceğini ve ne tür çıktıların bekleneceğini size söyler.
+
+fonksiyonları tanımlama konusunda birçok yeni sözdizimi öğrendiniz. Fonksiyon sözdiziminin bir özeti için aşağıdaki şemaya bakın.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/70329389/167041240-090138e1-feae-47e9-9b40-cd43f9e0c6a4.png" />
+</p>
+
+# <a name="5"></a>Adlandırılmış argümanlar
+
+Önceki örneklerde, bir fonksiyonu çağırırken parametre adlarını, adı veya yaşı belirtmenize gerek yoktu. Ancak, isterseniz bunu yapabilirsiniz. Örneğin, çok parametreli bir işlevi çağırabilir veya age parametresini name parametresinin önüne koymak gibi argümanlarınızı farklı bir sırayla iletmek isteyebilirsiniz. Bir fonksiyonu çağırırken parametre adını eklediğinizde, buna adlandırılmış bir argüman denir. birthdayGreeting() fonksiyonuyla adlandırılmış bir bağımsız değişken kullanmayı deneyin.
+
+1. Bu kod parçacığında gösterildiği gibi, adlandırılmış bağımsız değişkenleri kullanmak için Rex çağrısını değiştirin. Bunu, parametre adının ardından eşittir işaretini ve ardından değeri (ör. name = "Rex") ekleyerek yapabilirsiniz.
+
+```
+println(birthdayGreeting(name = "Rex", age = 2))
+```
+
+2. Kodu çalıştırın ve çıktının değişmediğini gözlemleyin:
+
+```
+Doğum günün kutlu olsun,
+Rover! Şimdi 5 yaşındasın!
+Doğum günün kutlu olsun, 
+Rex! Şimdi 2 yaşındasın!
+```
+
+3. Adlandırılmış bağımsız değişkenleri yeniden sıralayın. Örneğin, age isimli argümanı name isimli argümanın önüne koyun.
+
+```
+println(birthdayGreeting(age = 2, name = "Rex"))
+```
+
+4. Kodu çalıştırın ve çıktının aynı kaldığını gözlemleyin. Argümanların sırasını değiştirmiş olsanız bile, aynı parametreler için aynı değerler iletilir.
+
+```
+Doğum günün kutlu olsun,
+Rover! Şimdi 5 yaşındasın!
+Doğum günün kutlu olsun, 
+Rex! Şimdi 2 yaşındasın!
+```
+
+# <a name="6"></a>Varsayılan argümanlar
+
+Fonksiyon parametreleri ayrıca varsayılan bağımsız değişkenleri de belirleyebilir. Belki Rover en sevdiğiniz köpeğinizdir veya çoğu durumda belirli argümanlarla bir fonksiyonun çağrılmasını beklersiniz. Bir ifonksiyonu çağırdığınızda, varsayılanı olan bağımsız değişkenleri atlamayı seçebilirsiniz, bu durumda varsayılan kullanılır.
+
+Varsayılan bir bağımsız değişken eklemek için, parametrenin veri türünden sonra atama operatörünü (=) ekler ve onu bir değere eşitlersiniz. Varsayılan bir bağımsız değişken kullanmak için kodunuzu değiştirin.
+
+1. birthdayGreeting() işlevinde, name parametresini "Rover" varsayılan değerine ayarlayın.
+
+```
+fun birthdayGreeting(name: String = "Rover", age: Int): String {
+    return "Doğum günün kutlu olsun, $name! şimdi $age yaşında oldun!"
+}
+```
+
+2. main() içinde Rover için birthdayGreeting()'e yapılan ilk çağrıda, age adlı argümanı 5 olarak ayarlayın. age parametresi addan sonra tanımlandığından, age isimli argümanı kullanmanız gerekir. Adlandırılmış bağımsız değişkenler olmadan Kotlin, bağımsız değişkenlerin sırasının, parametrelerin tanımlandığı sıra ile aynı olduğunu varsayar. Adlandırılmış bağımsız değişken, Kotlin'in age parametresi için bir Int beklediğinden emin olmak için kullanılır.
+
+```
+println(birthdayGreeting(age = 5))
+println(birthdayGreeting("Rex", 2))
+```
+3. Kodunuzu çalıştırın. birthdayGreeting() fonksiyonuna yapılan ilk çağrı, adı hiç belirtmediğiniz için ad olarak "Rover" yazdırır. BirthdayGreeting()'e yapılan ikinci çağrı, ad için girdiğiniz Rex değerini kullanmaya devam eder.
+
+```
+Doğum günün kutlu olsun, Rover! Şimdi 5 yaşındasın!
+Doğum günün kutlu olsun, Rex! Şimdi 2 yaşındasın!
+```
+4. birthdayGreeting() fonksiyonuna yapılan ikinci çağrıdan adı kaldırın. Yine, ad atlandığından, yaş için adlandırılmış bir argüman kullanmanız gerekir.
+
+```
+println(birthdayGreeting(age = 5))
+println(birthdayGreeting(age = 2))
+```
+5. Kodunuzu çalıştırın ve sonra şimdi birthdayGreeting()'e yapılan her iki çağrının da ad olarak "Rover" yazdırdığını gözlemleyin, çünkü adlandırılmış bir bağımsız değişken iletilmez.
+
+```
+Happy Birthday, Rover! You are now 5 years old!
+Happy Birthday, Rover! You are now 2 years old!
+```
