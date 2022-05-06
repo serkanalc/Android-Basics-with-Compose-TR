@@ -3,23 +3,21 @@
 
 ## 📝 İçerik:
 
-Bu repositorie'de Google'ın tamamıyla ücretsiz olarak sunduğu [Android Kotlin Fundamentals](https://developer.android.com/courses/kotlin-fundamentals/course) dokümantasyonunu Türkçeye çevriyor olacağız. Sizi hangi konu başlıklarının beklediğini, döküman sayısını, tahmini çalışma süresini, hangi başarım rozetini alabileceğinizi aşağıdaki tablodan görebilirsiniz. Aynı zamanda bir hata veya güncel olmayan bir parçayla karşılaşırsanız ilgili dokümanının sorumlu kişisine ulaşıp en kısa sürede güncellenmesini gözlemleyebilirsiniz.
+Bu repositorie'de Google'ın tamamıyla ücretsiz olarak sunduğu [Android Basics with Compose](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-1#codelab-https://developer.android.com/codelabs/basic-android-kotlin-compose-intro-kotlin-practice-problems) dokümantasyonunu Türkçeye çevriyor olacağım. Sizi hangi konu başlıklarının beklediğini, döküman sayısını, tahmini çalışma süresini, hangi başarım rozetini alabileceğinizi aşağıdaki tablodan görebilirsiniz. Aynı zamanda bir hata veya güncel olmayan bir parçayla karşılaşırsanız bana ualaşabilirsiniz.
 
 |Ünite|✅  |          Konu Başlığı          | Döküman Sayısı  | Proje Sayısı | Tahmini Süre |Başarım Rozeti |
 |:---:|:-----|:------------------------------:|:-----------------:|:--------------:|:--------------:|:-------------:|
 |1|✅     | [Kotlin'le Programlamaya Giriş](https://github.com/serkanalc/Android-Basics-with-Compose-TR/tree/main/Part%2001%20-%20Kotlin'le%20Programlamaya%20Giri%C5%9F)       |5 Codelab                 |0 Proje              | 4 Saat             | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-1/badge.svg" width="135em"/>  
 
 
-## 🛠 Güncellemeler
+<img align="right" src="https://media.giphy.com/media/Y4bzv6DYbYzy8jDnoW/giphy.gif" width='250'/>
 
-Bu repositoriyi düzenli olarak güncelliyor ve geliştiriyoruz. siz de bu güncellemelerden haberdar olmak ve bir sonraki geliştirme veya güncellememizin ne zaman gerçekleşeceğini öğrenmek için [bu linki](https://github.com/serkanalc/Android-Kotlin-Fundamentals/wiki/Updates) kullanabilirsiniz. İlerleyiş hakkında bize görüşlerinizi ve önerilerinizi iletmekten çekinmeyin. 
-
-## <img align="right" src="https://media.giphy.com/media/LnKdiQXyu3DrhadXx6/giphy.gif" width='110' /> ⭐ Bu Repoyu Faydalı Buldunuz Mu ?
+## ⭐ Bu Repoyu Faydalı Buldunuz Mu ?
 
 
-Eğer size bir faydası dokunduğunu düşünüyorsanız bu repoyu starlayarak siz de [Stargazers](https://github.com/serkanalc/Android-Kotlin-Fundamentals/stargazers)'ların arasına katılıp bizi buna benzer kaynak paylaşımları yapmaya motive edebilirsiniz.⭐
+Eğer size bir faydası dokunduğunu düşünüyorsanız bu repoyu starlayarak siz de [Stargazers](https://github.com/serkanalc/Android-Basics-with-Compose-TR/stargazers)'ların arasına katılıp bizi buna benzer kaynak paylaşımları yapmaya motive edebilirsiniz.⭐
 
-Bu repo gönüllülük esaslı geliştirilmiştir, dolayısıyla bir şey eksikse veya düzeltilmesi gerekiyorsa lütfen ilgili kişilere ulaşarak bunu bildirin ve en kısa sürede düzenlememize katkıda bulunmuş olun 👍🏻
+Bu repo gönüllülük esaslı geliştirilmiştir, dolayısıyla bir şey eksikse veya düzeltilmesi gerekiyorsa lütfen bana ulaşarak bunu bildirin ve en kısa sürede düzenlememe katkıda bulunmuş olun 👍🏻
 
 
 ## 🧾 Lisans
