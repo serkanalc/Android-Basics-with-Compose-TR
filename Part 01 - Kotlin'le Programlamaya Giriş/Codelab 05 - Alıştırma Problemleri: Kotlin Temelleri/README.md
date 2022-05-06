@@ -166,6 +166,7 @@ Programın bu çıktıyı yazdırması için add() fonksiyonunu tanımlayabilir 
 Artık iki sayı eklemek için yeniden kullanılabilir bir fonksiyonlarınız var.
 
 subtract() fonksiyonlarını, add() fonksiyonunu uyguladığınız gibi uygulayabilir misiniz?
+
 İpucu: Toplama, çıkarma ve diğer matematik işlemleri arasındaki farkı düşünün. Oradan çözüm kodu üzerinde çalışmaya başlayın.
 
 # <a name="7"></a>Alıştırma 7 - Varsayılan parametreler
