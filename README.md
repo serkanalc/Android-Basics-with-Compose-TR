@@ -7,7 +7,7 @@ Bu repositorie'de Google'ın tamamıyla ücretsiz olarak sunduğu [Android Kotli
 
 |Ünite|✅  |          Konu Başlığı          | Döküman Sayısı  | Proje Sayısı | Tahmini Süre |Başarım Rozeti |
 |:---:|:-----|:------------------------------:|:-----------------:|:--------------:|:--------------:|:-------------:|
-|1|✅     | [Build an Interactive App](https://github.com/serkanalc/Android-Kotlin-Fundamentals/tree/main/Part%2003%20-%20Layouts)       |5 Codelab                 |1 Proje              | 3 Saat             | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-1/badge.svg" width="135em"/>  
+|1|✅     | [Kotlin'le Programlamaya Giriş](https://github.com/serkanalc/Android-Basics-with-Compose-TR/tree/main/Part%2001%20-%20Kotlin'le%20Programlamaya%20Giri%C5%9F)       |5 Codelab                 |0 Proje              | 4 Saat             | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-1/badge.svg" width="135em"/>  
 
 
 ## 🛠 Güncellemeler
