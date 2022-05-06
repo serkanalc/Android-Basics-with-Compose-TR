@@ -14,6 +14,9 @@
 📌  [Adımsayar](#8) <br>
 📌  [İki sayıyı karşılaştır](#9) <br>
 📌  [Yinelenen kodu bir fonksiyona taşı](#10) <br>
+📌  [Araştırma Problemleri : Çözümler](https://github.com/serkanalc/Android-Basics-with-Compose-TR/blob/main/Part%2001%20-%20Kotlin'le%20Programlamaya%20Giri%C5%9F/Codelab%2005%20-%20Al%C4%B1%C5%9Ft%C4%B1rma%20Problemleri:%20Kotlin%20Temelleri/Al%C4%B1%C5%9Ft%C4%B1rma%20Problemleri%20:%20%C3%87%C3%B6z%C3%BCmler.md
+) <br>
+
 
 
 #
