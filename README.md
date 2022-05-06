@@ -19,7 +19,7 @@ Bu repositorie'de Google'ın tamamıyla ücretsiz olarak sunduğu [Android Basic
 
 Eğer size bir faydası dokunduğunu düşünüyorsanız bu repoyu starlayarak siz de [Stargazers](https://github.com/serkanalc/Android-Basics-with-Compose-TR/stargazers)'ların arasına katılıp beni buna benzer kaynak paylaşımları yap-<br>maya motive edebilirsiniz.⭐
 
-Bu repo gönüllülük esaslı geliştirilmiştir, dolayısıyla bir şey eksikse veya düzeltilmesi gerekiyorsa lütfen bana ulaşarak bunu bildirin ve en kısa sürede düzenlememe katkıda bulunmuş olun 👍🏻
+Bu repo gönüllülük esaslı geliştirilmiştir, dolayısıyla bir şey eksikse veya dü- <br>zeltilmesi gerekiyorsa lütfen bana ulaşarak bunu bildirin ve en kısa sürede düzenlememe katkıda bulunmuş olun 👍🏻
 
 
 ## 🧾 Lisans
