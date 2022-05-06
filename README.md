@@ -7,8 +7,8 @@ Bu repositorie'de Google'ın tamamıyla ücretsiz olarak sunduğu [Android Basic
 
 |Ünite|✅  |          Konu Başlığı          | Döküman Sayısı  | Proje Sayısı | Tahmini Süre |Başarım Rozeti |
 |:---:|:-----|:------------------------------:|:-----------------:|:--------------:|:--------------:|:-------------:|
-|0|✅     | [Hazırlık](https://github.com/serkanalc/Android-Basics-with-Compose-TR/tree/main/Part%2001%20-%20Kotlin'le%20Programlamaya%20Giri%C5%9F)       |5 Codelab                 |0 Proje              | 4 Saat             | <img src="https://media.giphy.com/media/B0ifefWijDGktTd683/giphy.gif" width="300em"/>  
-|1|✅     | [Kotlin'le Programlamaya Giriş](https://github.com/serkanalc/Android-Basics-with-Compose-TR/tree/main/Part%2001%20-%20Kotlin'le%20Programlamaya%20Giri%C5%9F)       |2 Codelab                 |0 Proje              | 4 Saat             | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-1/badge.svg" width="135em"/>  
+|0|✅     | [Hazırlık](https://github.com/serkanalc/Android-Basics-with-Compose-TR/tree/main/Part%2001%20-%20Kotlin'le%20Programlamaya%20Giri%C5%9F)       |2 Codelab                 |0 Proje              | 4 Saat             | <img src="https://media.giphy.com/media/B0ifefWijDGktTd683/giphy.gif" width="300em"/>  
+|1|✅     | [Kotlin'le Programlamaya Giriş](https://github.com/serkanalc/Android-Basics-with-Compose-TR/tree/main/Part%2001%20-%20Kotlin'le%20Programlamaya%20Giri%C5%9F)       |5 Codelab                 |0 Proje              | 4 Saat             | <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-1/badge.svg" width="135em"/>  
 
 
 <img align="right" src="https://media.giphy.com/media/fWpU2nQmUKvRct4c1u/giphy.gif" width='250'/>
