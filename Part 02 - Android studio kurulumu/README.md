@@ -4,7 +4,7 @@
 
 📌 [[Video] Android Studio'ya Giriş](https://www.youtube.com/watch?v=uY3lsHP7GvM) <br>
 📌 [[Codelab] Android Studio'yu indirin ve yükleyin](https://github.com/serkanalc/Android-Basics-with-Compose-TR/tree/main/Part%2002%20-%20Android%20studio%20kurulumu/Codelab%2001%20-%20Android%20Studio'yu%20indirin%20ve%20y%C3%BCkleyin)<br>
-📌 [[Codelab] İlk Android uygulamanızı oluşturun]()<br>
+📌 [[Codelab] İlk Android uygulamanızı oluşturun](https://github.com/serkanalc/Android-Basics-with-Compose-TR/tree/main/Part%2002%20-%20Android%20studio%20kurulumu/Codelab%2002%20-%20%C4%B0lk%20Android%20uygulaman%C4%B1z%C4%B1%20olu%C5%9Fturun)<br>
 📌 [[Codelab] Android Emülatörr'de ilk uygulamanızı çalıştırın]()<br>
 📌 [[Codelab] Android cihazınızı nasıl bağlayabilirsiniz?]()<br>
 📌 [[Video] Sırada ne var?](https://www.youtube.com/watch?v=gleqCRTytuA)<br>
