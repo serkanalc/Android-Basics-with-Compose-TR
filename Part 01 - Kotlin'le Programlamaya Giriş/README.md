@@ -1,4 +1,4 @@
-# Build Your First App
+# Kotlin'le Programlamaya Giriş
 
 Selamlar Android Basics with Kotlin serisinin ilk bölümüne hoş geldiniz. Bu bölümde aşağıdaki konular üzerinde duruyor olacağız. Hadi Başlayalım :
 
