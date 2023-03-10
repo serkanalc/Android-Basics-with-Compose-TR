@@ -2,6 +2,9 @@
 
 ### Konu Başlıkları:
 
+
+
+📌  [Başlamadan Önce](https://github.com/serkanalc/Android-Basics-with-Compose-TR/blob/main/Part%2002%20-%20Android%20studio%20kurulumu/Codelab%2002%20-%20İlk%20Android%20uygulamanızı%20oluşturun/Başlamadan%20Önce.md) <br>
 📌  [Şablon kullanarak bir proje yaratın](#1) <br>
 📌  [Proje dosyalarını bulun](#2) <br>
 📌  [Metini güncelleyin](#3) <br>
