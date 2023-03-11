@@ -186,15 +186,21 @@ Artık tanıtım metininiz var, ama şimdilik biraz sıkıcı duruyor! Bu bölü
 Tanıtımınız için farklı bir arka plan rengi kurmak için metninizi bir `Surface` ile çevrelemeniz gerekiyor. `Surface`, arayüzün arka plan rengini veya border'ını değiştirebileceğiniz bir bölümünü temsil eden bir container'dır. 
 1. Metini `Surface` ile çevrelemek için, metinin satırını highlightlayın, basın (Windows için `Alt+Enter` veya Mac için `Option+Enter`) sonra **Surround with widget**'ı seçin. 
 
-![image](https://user-images.githubusercontent.com/127443136/224383553-cc8d828c-0ec8-433f-8a41-1a91b6f02d14.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/127443136/224383553-cc8d828c-0ec8-433f-8a41-1a91b6f02d14.png" />
+</p>
 
 2. **Surround with Container**'ı seçin.
 
-![image](https://user-images.githubusercontent.com/127443136/224383687-b0b9ee4f-4d4f-4e0e-bf47-82f52c74d167.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/127443136/224383687-b0b9ee4f-4d4f-4e0e-bf47-82f52c74d167.png" />
+</p>
 
 Default container size `Box`'ı verecektir, ama siz bunu başka bir container tipiyle değiştirebilirsiniz.
 
-![image](https://user-images.githubusercontent.com/127443136/224384395-30c26b5d-90d3-4d72-b526-cc26f049f726.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/127443136/224384395-30c26b5d-90d3-4d72-b526-cc26f049f726.png" />
+</p>
 
 3. `Box`'ı silin ve yerine `Surface()` yazın.
 
@@ -220,7 +226,9 @@ fun Greeting(name: String) {
 
 5. Color yazdığınızda kırmızı ve altı çizili olduğunu görebilirsiniz. Bunu çözmek için dosyanın yukarısına çıkınız ve import yazısının yanındaki üç noktaya tıklayınız.
 
-![image](https://user-images.githubusercontent.com/127443136/224386028-58927a3f-8029-4901-b411-1d453532deca.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/127443136/224386028-58927a3f-8029-4901-b411-1d453532deca.png" />
+</p>
 
 6. Bu ifadeyi import listesinin sonuna ekleyiniz.
 
@@ -247,7 +255,9 @@ import androidx.compose.ui.graphics.Color
 
 7. Kodunuzda, import listesini alfabe sırasına göre tutmak işinizi kolaylaştıracaktır. Bunu yapmak için yukarıdaki araç çubuğundan **Help**'e basın, oraya **Optimize Imports** yazın ve **Optimize Imports**'a tıklayın. 
 
-![image](https://user-images.githubusercontent.com/127443136/224387288-055f3c06-32f3-439b-8f92-48bbebaace5e.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/127443136/224387288-055f3c06-32f3-439b-8f92-48bbebaace5e.png" />
+</p>
 
 Şimdi tüm liste bu şekilde gözükecektir:
 
@@ -269,7 +279,9 @@ import com.example.myapplication.ui.theme.GreetingCard
 8. Dikkat ederseniz Surface parantezinin içine yazdığınız Color kırmızı renkte ve altı çizili olmaktan altı kırmızı renkle çizili hale gelmiş olacaktır. Bunu düzeltmek için sonuna nokta koyun. Açılan listede farklı renk seçeneklerinin olduğunu göreceksiniz. 
 Bu Android Studio'daki harika eklentilerden biri, akıllı ve yapabildiğinde size yardım eder. Bu durumda belirli bir renk seçmek istediğinizi biliyor ve size farklı seçenekler sunuyor.
 
-![image](https://user-images.githubusercontent.com/127443136/224388745-5bf634f6-2533-4ca6-9732-d60d54a69f6c.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/127443136/224388745-5bf634f6-2533-4ca6-9732-d60d54a69f6c.png" />
+</p>
 
 9. Surface için bir renk belirleyin. Bu codelab magenta'yı kullanıyor, ama siz favorinizi seçebilirsiniz!
 
@@ -284,6 +296,7 @@ fun Greeting(name: String) {
 
 10. **Build&Refresh**'e basın. Metininiz seçtiğiniz renkle kaplanmış bir halde olacaktır!
 
-![image](https://user-images.githubusercontent.com/127443136/224389251-2461ecf5-925f-4bb7-bb03-458e91752cff.png)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/127443136/224389251-2461ecf5-925f-4bb7-bb03-458e91752cff.png" />
+</p>
 
