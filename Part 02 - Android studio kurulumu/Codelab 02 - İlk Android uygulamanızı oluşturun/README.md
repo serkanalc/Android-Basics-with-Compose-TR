@@ -9,6 +9,9 @@
 📌  [Proje dosyalarını bulun](#2) <br>
 📌  [Metini güncelleyin](#3) <br>
 📌  [Arka plan rengini değiştirin](#4) <br>
+📌  [DOlgu ekleyin](#5) <br>
+📌  [Çözüm kodunu gözden geçirin](#6) <br>
+
 
 
 
@@ -300,3 +303,77 @@ fun Greeting(name: String) {
   <img src="https://user-images.githubusercontent.com/127443136/224389251-2461ecf5-925f-4bb7-bb03-458e91752cff.png" />
 </p>
 
+# <a name="5"></a>Dolgu ekleyin
+
+Artık metininizin bir arka plan rengi var, şimdi metininizin etrafına biraz alan (dolgu) ekleyeceksiniz.
+
+`Modifier` çoğaltmak veya bir composable'ı dekore etmek için kullanılır. Kullanabileceğiniz bir Modifier de `padding`'dir ve bu modifier bir parçanın etrafına (bu durumda metininizin etrafına) alan ekler. Bu `Modifier.padding()` fonksiyonunu kullanarak elde edilir.
+
+1. Bu importları, import komut bölümüne ekleyin.
+
+Yeni importları alfabetik olarak sıralamak için **Optimize Imports**'u kullandığınızdan emin olun. 
+
+```kotlin
+import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.layout.padding
+```
+
+2. Metininizin etrafına `24.dp` boyutunda dolgu modifier'i ekleyin, **Build&Refresh**'e tıklayın.
+
+> Not: Bir sonraki pathway'de density-independent pixels hakkında daha çok şey öğreneceksiniz.
+```kotlin
+@Composable
+fun Greeting(name: String) {
+   Surface(color = Color.Magenta) {
+       Text(text = "Hi, my name is $name!", modifier = Modifier.padding(24.dp))
+   }
+}
+```
+
+![e197f5dc2a5830e7_856](https://user-images.githubusercontent.com/127443136/224491234-0eae9ee9-6f6c-4257-ba12-b8775413b37f.png)
+
+Tebrikler Compose içinde ilk Android uygulamanızı yarattınız! Bu büyük bir başarı. Farklı renkler ve metinlerle oynamak için kendinize biraz zaman ayırın, kendinize ait yapın!
+
+# <a name="6"></a>Çözüm kodunu gözden geçirin
+
+```kotlin
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Surface
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import com.example.myapplication.ui.theme.GreetingCardTheme
+class MainActivity : ComponentActivity() {
+   override fun onCreate(savedInstanceState: Bundle?) {
+       super.onCreate(savedInstanceState)
+       setContent {
+           GreetingCardTheme {
+               // A surface container that uses the 'background' color from the theme
+               Surface(color = MaterialTheme.colors.background) {
+                   Greeting("Android")
+               }
+           }
+       }
+   }
+}
+@Composable
+fun Greeting(name: String) {
+   Surface(color = Color.Magenta) {
+       Text(text = "Hi, my name is $name!", modifier = Modifier.padding(24.dp))
+   }
+}
+@Preview(showBackground = true)
+@Composable
+fun DefaultPreview() {
+   GreetingCardTheme {
+       Greeting("Meghan")
+   }
+}
+```
