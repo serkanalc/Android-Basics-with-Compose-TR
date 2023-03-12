@@ -9,7 +9,7 @@
 📌  [Proje dosyalarını bulun](#2) <br>
 📌  [Metini güncelleyin](#3) <br>
 📌  [Arka plan rengini değiştirin](#4) <br>
-📌  [DOlgu ekleyin](#5) <br>
+📌  [Dolgu ekleyin](#5) <br>
 📌  [Çözüm kodunu gözden geçirin](#6) <br>
 
 
